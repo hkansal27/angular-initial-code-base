@@ -1,0 +1,46 @@
+.info-display-container {
+  position: fixed;
+  width: 250px;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: MediumHelvet, sans-serif;
+  color: #ffffff;
+  z-index: 10000;
+}
+
+.info-display-container-red {
+  background-color: #bd1010;
+}
+
+.info-display-container-green {
+  background-color: #14d414;
+}
+
+.info-display-container-icon {
+  height: 14px;
+  margin-left: 10px;
+  vertical-align: top !important;
+  cursor: pointer;
+}
+
+.info-display-container-text {
+  max-height: 100px;
+  display: inline-block;
+  width: calc(100% - 35px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loader-main-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+  padding-top: calc(50vh - 50px);
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}

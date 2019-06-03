@@ -1,0 +1,15 @@
+<router-outlet></router-outlet>
+
+<div class="loader-main-container" *ngIf="showLoader">
+  <img src="assets/images/app/loader.gif" style="height:100px;" />
+</div>
+
+<div class="info-display-container" [ngClass]="getInfoWindowStyleClass()" *ngIf="showInfo">
+
+  <div>
+    <span class="info-display-container-text">{{getInfoMessage()}}</span>
+    <img class=" info-display-container-icon" (click)="hideDisplayInfoWindow()"
+      src="assets/images/app/close_white.svg" />
+  </div>
+
+</div>
